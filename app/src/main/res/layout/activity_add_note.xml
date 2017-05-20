@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/noteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入标题"
+        android:textColor="#0000ff"/>
+
+    <EditText
+        android:id="@+id/noteTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noteName"
+        android:editable="false"
+        android:textColor="#0000ff"/>
+
+    <view
+        xmlns:android="https://schemas.android.com/apk/res/android"
+        android:id="@+id/noteMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/noteName"
+        android:layout_above="@id/relativeLayout1"
+        class="com.zjgsu.shenyilin.personal_assistant.LinedEditText"
+        android:capitalize="sentences"
+        android:fadingEdge="vertical"
+        android:gravity="top"
+        android:scrollbars="vertical"
+        android:hint="请输入内容"
+        android:textColor="#0000ff"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/button_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存" />
+        <Button
+            android:id="@+id/button_cancelcommit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/button_commit"
+            android:text="取消"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

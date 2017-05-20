@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.zjgsu.shenyilin.personal_assistant.login">
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录界面"
+        android:textColor="#000"
+        android:textSize="36sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名："
+        android:id="@+id/putnamein"
+        android:layout_below="@id/login"
+        android:textSize="36sp"/>
+
+    <EditText
+        android:id="@+id/text_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/login"
+        android:layout_toRightOf="@id/putnamein"
+        android:textSize="20sp"
+        android:hint="此处请输入用户名"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码："
+        android:id="@+id/putkeyin"
+        android:layout_below="@id/putnamein"
+        android:textSize="36sp"/>
+
+    <EditText
+        android:id="@+id/text_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/text_username"
+        android:layout_toRightOf="@id/putkeyin"
+        android:textSize="20sp"
+        android:hint="此处请输入密码"
+        android:password="true"/>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="login"
+        android:layout_below="@id/text_key"
+        />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="cancel"
+        android:layout_below="@id/button_login"
+        />
+
+
+</RelativeLayout>
